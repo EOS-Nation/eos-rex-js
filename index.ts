@@ -1,5 +1,5 @@
 import { APIClient } from "@wharfkit/antelope"
-import * as System from "./codegen/eosio"
+import * as System from "./codegen/eosio.js"
 
 export async function get_rexpool(client: APIClient) {
     const response = await client.v1.chain.get_table_rows({code: "eosio", scope: "eosio", table: "rexpool"})
